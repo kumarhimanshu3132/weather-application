@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+ 
+        <div class="weather-card search-card" id="searchCard">
+            <div class="card-header">
+                <i class="fa-solid fa-cloud-sun header-icon"></i>
+                <h1>Weather App</h1>
+            </div>
+
+            <div class="search-box">
+                <div class="search-icon-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="cityInput" placeholder="Enter city name" />
+                </div>
+                <button id="searchBtn" class="search-btn">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="divider">
+                <span>or</span>
+            </div>
+            
+            <button id="locationBtn" class="location-btn">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                Get Device Location
+            </button>
+        </div>
+
+        <div class="weather-card result-card hidden" id="resultCard">
+            <div class="card-header">
+                <i class="fa-solid fa-arrow-left back-icon"></i>
+                <h1>Weather App</h1>
+            </div>
+
+            <div class="weather-icon-container">
+                <img id="weatherIcon" src="" alt="Weather icon" class="weather-icon-img">
+            </div>
+
+            <div class="temperature">
+                <h2 id="temp"></h2>
+            </div>
+
+            <p id="condition" class="condition"></p>
+
+            <div class="location">
+                <i class="fa-solid fa-location-dot location-icon"></i>
+                <span id="cityName"></span>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <i class="fa-solid fa-temperature-half detail-icon temp-icon"></i>
+                    <div>
+                        <span id="feelsLike" class="value"></span>
+                        <span class="label">Feels like</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-droplet detail-icon humidity-icon"></i>
+                    <div>
+                        <span id="humidity" class="value"></span>
+                        <span class="label">Humidity</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-details">
+                <div class="extra-item">
+                    <i class="fa-solid fa-wind wind-icon"></i>
+                    <div>
+                        <span id="windSpeed" class="value"></span>
+                        <span class="label">Wind Speed</span>
+                    </div>
+                </div>
+                <div class="extra-item">
+                    <i class="fa-solid fa-gauge pressure-icon"></i>
+                    <div>
+                        <span id="pressure" class="value"></span>
+                        <span class="label">Pressure</span>
+                    </div>
+                </div>
+                <div class="extra-item">
+                    <i class="fa-solid fa-eye visibility-icon"></i>
+                    <div>
+                        <span id="visibility" class="value"></span>
+                        <span class="label">Visibility</span>
+                    </div>
+                </div>
+                <div class="extra-item">
+                    <i class="fa-solid fa-cloud cloud-icon"></i>
+                    <div>
+                        <span id="cloudCover" class="value"></span>
+                        <span class="label">Cloud Cover</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="refreshBtn" class="refresh-btn">
+                <i class="fa-solid fa-rotate-right"></i>
+                Refresh Weather
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
