@@ -25,7 +25,7 @@ A dynamic, interactive web application that provides real-time weather data for 
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/kumarhimanshu3132/weather-application.git](https://github.com/kumarhimanshu3132/weather-application.git)
+   git clone https://github.com/kumarhimanshu3132/weather-application.git
    ```
   Navigate into the project directory:
 
