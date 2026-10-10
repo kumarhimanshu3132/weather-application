@@ -23,20 +23,21 @@ A dynamic, interactive web application that provides real-time weather data for 
 
 ## 🚀 Local Setup Instructions
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/kumarhimanshu3132/weather-application.git
-   ```
-  Navigate into the project directory:
+Clone the repository:
+```bash
+git clone https://github.com/kumarhimanshu3132/weather-application.git
+```
 
-  ```bash
-  cd weather-application
-  ```
-  Get a free API key from WeatherAPI.
+Navigate into the project directory:
+```bash
+cd weather-application
+```
 
-  Open script.js and replace the placeholder API_KEY string with your new key.
+Get a free API key from WeatherAPI.
 
-  Open the index.html file in your browser or run it via a local development server (like VS Code Live Server).
+Open script.js and replace the placeholder API_KEY string with your new key.
+
+Open the index.html file in your browser or run it via a local development server (like VS Code Live Server).
 
 🧠 Learning Outcomes
 This project was developed during Semester 4 (Advance Web Technology) to transition from static web pages to dynamic, data-driven applications. It solidified core concepts of the DOM, event listeners, promise-based HTTP requests (fetch), and handling JSON payloads.
